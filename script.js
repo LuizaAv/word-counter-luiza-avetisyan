@@ -3,7 +3,8 @@ const letters = document.getElementById("letters");
 const words = document.getElementById("words");
 const sentences = document.getElementById("sentences");
 const result = document.getElementById("result");
-const inputValue = document.getElementById("inputValue")
+const inputValue = document.getElementById("inputValue");
+const backgroundColor = document.getElementById("bgColor");
 
 let userText = ""
 userInput.onchange = function(){
@@ -26,6 +27,9 @@ letters.onclick  = function(){
         inputValue.innerText = `Input Value: ${userInput.value}`
         userInput.value=""
     }
+    let num = Math.random()*1000000
+    let roundedNum = Math.trunc(num)
+    letters.style.backgroundColor = `#${roundedNum}`
 }
 
 words.onclick = function() {
@@ -34,10 +38,14 @@ words.onclick = function() {
             let newArr = userText.split(/[, ]+/)
             wordsQuantity = newArr.length
         }
-        result.innerText = `Result: ${wordsQuantity}`
-        inputValue.innerText = `Input Value:: ${userInput.value}`
+        result.innerText = userText ? `Result: ${wordsQuantity}` : `Result: ${""}`
+        inputValue.innerText = `Input Value: ${userInput.value}`
         userInput.value=""
-    }
+
+    let num = Math.random()*1000000
+    let roundedNum = Math.trunc(num)
+    words.style.backgroundColor = `#${roundedNum}`
+}
 
 
 sentences.onclick = function() {
@@ -53,4 +61,14 @@ sentences.onclick = function() {
         inputValue.innerText = `Input Value:: ${userInput.value}`
         userInput.value=""
     }
+    let num = Math.random()*1000000
+    let roundedNum = Math.trunc(num)
+    sentences.style.backgroundColor = `#${roundedNum}`
+}
+
+
+backgroundColor.onclick = function(){
+    let num = Math.random()*1000000
+    let roundedNum = Math.trunc(num)
+    backgroundColor.style.backgroundColor = `#${roundedNum}`
 }
