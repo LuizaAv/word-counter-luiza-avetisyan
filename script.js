@@ -23,3 +23,16 @@ letters.onclick  = function(){
         result.innerText = lettersQuantity
     }
 }
+
+words.onclick = function() {
+    let wordsQuantity = 1;
+    if(result.innerText){
+        let newArr = result.innerText.toLowerCase().split("");
+            for(let i=0; i<newArr.length; i++){
+                if(!(/[a-z]/gi.test(newArr[i])) && newArr[i] !== "'"){
+                    wordsQuantity += 1
+                }
+            }
+        result.innerText = wordsQuantity
+    }
+}
