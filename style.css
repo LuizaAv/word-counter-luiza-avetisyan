@@ -1,0 +1,47 @@
+.mainContainer{
+    height: 70vh;
+    width: 70vw;
+    background-color: orange;
+    margin: auto;
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+}
+
+h2{
+    margin: auto;
+}
+
+#userInput{
+    height: 5vh;
+    width: 30vw;
+    margin: auto;
+    margin-top: 2%;
+    outline: none;
+}
+
+.btnContainer{
+    margin: auto;
+    margin-top: 1%;
+}
+
+.buttons{
+    height: 6vh;
+    width: 10vw;
+    border-radius: 10px;
+    background-color: black;
+    color: antiquewhite;
+}
+
+.resultContainer{
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
+}
+
+#result{
+    font-size: 20px;
+    font-weight: 800;
+    display: flex;
+    flex-direction: row;
+}

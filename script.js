@@ -14,7 +14,7 @@ userInput.onchange = function(){
 letters.onclick  = function(){
     let lettersQuantity = 0;
     if(userText){
-        let newArr = userText.toLowerCase().split(/\s/);
+        let newArr = userText.toLowerCase().split("");
             for(let i=0; i<newArr.length; i++){
                 if( /[a-z]/gi.test(newArr[i])){
                     lettersQuantity += 1
@@ -22,8 +22,8 @@ letters.onclick  = function(){
                     return null
                 }
             }
-        result.innerText = lettersQuantity
-        inputValue.innerText = userInput.value
+        result.innerText = `Result: ${lettersQuantity}`
+        inputValue.innerText = `Input Value: ${userInput.value}`
         userInput.value=""
     }
 }
@@ -34,8 +34,8 @@ words.onclick = function() {
             let newArr = userText.split(/[, ]+/)
             wordsQuantity = newArr.length
         }
-        result.innerText = wordsQuantity
-        inputValue.innerText = userInput.value
+        result.innerText = `Result: ${wordsQuantity}`
+        inputValue.innerText = `Input Value:: ${userInput.value}`
         userInput.value=""
     }
 
@@ -43,14 +43,14 @@ words.onclick = function() {
 sentences.onclick = function() {
     let sentencesQuantity = 0
     if(userText){
-        let newArr = userText.split(/\s/);
+        let newArr = userText.split("");
             for(let i=0; i<newArr.length; i++){
                 if(newArr[i] === "." || newArr[i] === "!" || newArr[i] === "?"){
                     sentencesQuantity +=1
                 }
             }
-        result.innerText = sentencesQuantity
-        inputValue.innerText = userInput.value
+        result.innerText = `Result: ${sentencesQuantity}`
+        inputValue.innerText = `Input Value:: ${userInput.value}`
         userInput.value=""
     }
 }

@@ -8,12 +8,19 @@
     <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-    <input id="userInput" placeholder="type"/>
-    <button id="letters">Count letters</button>
-    <button id="words">Count words</button>
-    <button id="sentences">Count sentences</button>
-    <div id="result"></div>
-    <div id="inputValue"></div>
+    <div class="mainContainer">
+        <h2>Letter, word, sentence counter</h2>
+        <input id="userInput" placeholder="type"/>
+        <div class="btnContainer">
+            <button id="letters" class="buttons">Count letters</button>
+            <button id="words" class="buttons">Count words</button>
+            <button id="sentences" class="buttons">Count sentences</button>
+        </div>
+        <div class="resultContainer">
+            <div id="result">Result:</div>
+            <div id="inputValue">Input Value: </div>
+        </div>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
