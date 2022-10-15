@@ -1,4 +1,4 @@
-.mainContainer{
+.mainContainer {
     height: 70vh;
     width: 70vw;
     background-color: orange;
@@ -8,11 +8,11 @@
     flex-direction: column;
 }
 
-h2{
+h2 {
     margin: auto;
 }
 
-#userInput{
+#userInput {
     height: 5vh;
     width: 30vw;
     margin: auto;
@@ -20,12 +20,12 @@ h2{
     outline: none;
 }
 
-.btnContainer{
+.btnContainer {
     margin: auto;
     margin-top: 1%;
 }
 
-.buttons{
+.buttons {
     height: 6vh;
     width: 10vw;
     border-radius: 10px;
@@ -33,13 +33,13 @@ h2{
     color: antiquewhite;
 }
 
-.resultContainer{
+.resultContainer {
     display: flex;
     flex-direction: column;
     margin-left: 5%;
 }
 
-#result{
+#result {
     font-size: 20px;
     font-weight: 800;
     display: flex;
